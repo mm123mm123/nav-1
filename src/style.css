@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+body {
+  background: #eee;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+img{
+  max-width:100%;
+}
+
+.globalHeader{
+  margin: 20px;
+}
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 500px){
+  .globalHeader{
+    margin: 60px 0px 110px;
+  }
+  .searchForm {
+    max-width:400px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+.searchForm > input {
+  width: 100%;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  background: #017EAB;
+  color: white;
+  font-size: 16px;
+}
+
+
+  .siteList {
+    display: flex;
+    flex-wrap: wrap;
+    margin:20px;
+    justify-content: space-between;
+  }
+
+
+@media(min-width: 500px){
+  .globalMain{
+    width:900px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  .siteList{
+    justify-content:flex-start;
+    margin-left: 0;
+    margin-right: -25px;
+  }
+  .siteList > li {
+    margin-right:25px;
+  }
+}
+
+
+
+.siteList .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin-bottom: 10px;
+  border:1px solid #ddd;
+  border-radius: 4px;
+  padding:20px 0;
+  position:relative;
+}
+@media(min-width:500px){
+  .siteList .site {
+    cursor:pointer;
+  }
+}
+
+.siteList .site > .logo {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 56px;
+  text-transform:uppercase;
+}
+
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 1px;
+}
+.siteList .site > .closeButton{
+  position:absolute;
+  top:3px;
+  right:5px;
+}
+@media(min-width:500px){
+  .siteList .site > .closeButton{
+    display:none;
+  }
+  .siteList .site:hover > .closeButton{
+    display:block;
+    cursor: default;
+  }
+}
+
+.siteList .addButton {
+  border:1px solid #dddddd;
+  width:160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:20px 0;
+  background: white;
+}
+.siteList .addButton .icon{
+  width:56px;
+  height:56px;
+}
+.siteList .addButton .text{
+  font-size: 14px;
+  margin-top: 4px;
+}
+.siteList .addButton .iconWrapper{
+  width:64px;
+  height:64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
