@@ -37,10 +37,9 @@ let render = () => {
     })
 
     $li.on('click', '.closeButton', (e) => {
-      e.stopPropagation()
       hashMap.splice(index, 1)
-      $li.remove()
-      console.log(hashMap)
+      render()
+      e.stopPropagation()
     })
   })
 }
