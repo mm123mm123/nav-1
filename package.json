@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "parcel build src/index.html --no-minify --public-url ./"
+  },
+  "name": "nav1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mm123mm123/nav-1.git",
+  "author": "mimi <fiymi666@gmail.com>",
+  "license": "MIT"
+}
